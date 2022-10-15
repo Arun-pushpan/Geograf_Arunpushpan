@@ -1,251 +1,58 @@
 import 'package:flutter/material.dart';
-import 'package:carousel_slider/carousel_slider.dart';
-class CaroselPage extends StatefulWidget {
-  const CaroselPage({Key? key}) : super(key: key);
+class Profile extends StatefulWidget {
+  const Profile({Key? key}) : super(key: key);
 
   @override
-  State<CaroselPage> createState() => _CaroselPageState();
+  State<Profile> createState() => _ProfileState();
 }
-
-class _CaroselPageState extends State<CaroselPage> {
+class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
-    return
-      ListView(
-
-          children: [
-      CarouselSlider(
-
-      items: [
-
-      //1st Image of Slider
-      Container(
-      margin: EdgeInsets.all(6.0),
-    decoration: BoxDecoration(
-    borderRadius: BorderRadius.circular(8.0),
-    image: DecorationImage(
-    image: NetworkImage("assets/images/img1.jpg"),
-    fit: BoxFit.cover,
-    ),
-    ),
-    ),
-
-    //2nd Image of Slider
-    Container(
-    margin: EdgeInsets.all(6.0),
-    decoration: BoxDecoration(
-    borderRadius: BorderRadius.circular(8.0),
-    image: DecorationImage(
-    image: NetworkImage("https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg"),
-    fit: BoxFit.cover,
-    ),
-    ),
-    ),
-
-    //3rd Image of Slider
-    Container(
-    margin: EdgeInsets.all(6.0),
-    decoration: BoxDecoration(
-    borderRadius: BorderRadius.circular(8.0),
-    image: DecorationImage(
-    image: NetworkImage("https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg"),
-    fit: BoxFit.cover,
-    ),
-    ),
-    ),
-
-    //4th Image of Slider
-    Container(
-    margin: EdgeInsets.all(6.0),
-    decoration: BoxDecoration(
-    borderRadius: BorderRadius.circular(8.0),
-    image: DecorationImage(
-    image: NetworkImage("https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg"),
-    fit: BoxFit.cover,
-    ),
-    ),
-    ),
-
-    //5th Image of Slider
-    Container(
-    margin: EdgeInsets.all(6.0),
-    decoration: BoxDecoration(
-    borderRadius: BorderRadius.circular(8.0),
-    image: DecorationImage(
-    image: NetworkImage("https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg"),
-    fit: BoxFit.cover,
-    ),
-    ),
-    ),
-    ],
-    //Slider Container properties
-    options: CarouselOptions(
-    height: 180.0,
-    enlargeCenterPage: true,
-    autoPlay: true,
-    aspectRatio: 16 / 9,
-    autoPlayCurve: Curves.fastOutSlowIn,
-    enableInfiniteScroll: true,
-    autoPlayAnimationDuration: Duration(milliseconds: 800),
-    viewportFraction: 0.8,
-    )
-    ),
-
-    CarouselSlider(
-
-    items: [
-
-    //1st Image of Slider
-    Container(
-    margin: EdgeInsets.all(6.0),
-    decoration: BoxDecoration(
-    borderRadius: BorderRadius.circular(8.0),
-    image: DecorationImage(
-    image: NetworkImage("https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg"),
-    fit: BoxFit.cover,
-    ),
-    ),
-    ),
-
-    //2nd Image of Slider
-    Container(
-    margin: EdgeInsets.all(6.0),
-    decoration: BoxDecoration(
-    borderRadius: BorderRadius.circular(8.0),
-    image: DecorationImage(
-    image: NetworkImage("https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg"),
-    fit: BoxFit.cover,
-    ),
-    ),
-    ),
-
-    //3rd Image of Slider
-    Container(
-    margin: EdgeInsets.all(6.0),
-    decoration: BoxDecoration(
-    borderRadius: BorderRadius.circular(8.0),
-    image: DecorationImage(
-    image: NetworkImage("https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg"),
-    fit: BoxFit.cover,
-    ),
-    ),
-    ),
-
-    //4th Image of Slider
-    Container(
-    margin: EdgeInsets.all(6.0),
-    decoration: BoxDecoration(
-    borderRadius: BorderRadius.circular(8.0),
-    image: DecorationImage(
-    image: NetworkImage("https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg"),
-    fit: BoxFit.cover,
-    ),
-    ),
-    ),
-
-    //5th Image of Slider
-    Container(
-    margin: EdgeInsets.all(6.0),
-    decoration: BoxDecoration(
-    borderRadius: BorderRadius.circular(8.0),
-    image: DecorationImage(
-    image: NetworkImage("https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg"),
-    fit: BoxFit.cover,
-    ),
-    ),
-    ),
-    ],
-    //Slider Container properties
-    options: CarouselOptions(
-    height: 180.0,
-    enlargeCenterPage: true,
-    autoPlay: true,
-    aspectRatio: 16 / 9,
-    autoPlayCurve: Curves.fastOutSlowIn,
-    enableInfiniteScroll: true,
-    autoPlayAnimationDuration: Duration(milliseconds: 800),
-    viewportFraction: 0.8,
-    )
-    ),
-
-    CarouselSlider(
-
-    items: [
-
-    //1st Image of Slider
-    Container(
-    margin: EdgeInsets.all(6.0),
-    decoration: BoxDecoration(
-    borderRadius: BorderRadius.circular(8.0),
-    image: DecorationImage(
-    image: NetworkImage("https://fluor-api-docs/assets/widgets/owl-2.jpg"),
-    fit: BoxFit.cover,
-    ),
-    ),
-    ),
-
-    //2nd Image of Slider
-    Container(
-    margin: EdgeInsets.all(6.0),
-    decoration: BoxDecoration(
-    borderRadius: BorderRadius.circular(8.0),
-    image: DecorationImage(
-    image: NetworkImage(""),
-    fit: BoxFit.cover,
-    ),
-    ),
-    ),
-
-    //3rd Image of Slider
-    Container(
-    margin: EdgeInsets.all(6.0),
-    decoration: BoxDecoration(
-    borderRadius: BorderRadius.circular(8.0),
-    image: DecorationImage(
-    image: NetworkImage(""),
-    fit: BoxFit.cover,
-    ),
-    ),
-    ),
-
-    //4th Image of Slider
-    Container(
-    margin: EdgeInsets.all(6.0),
-    decoration: BoxDecoration(
-    borderRadius: BorderRadius.circular(8.0),
-    image: DecorationImage(
-    image: NetworkImage(""),
-    fit: BoxFit.cover,
-    ),
-    ),
-    ),
-
-    //5th Image of Slider
-    Container(
-    margin: EdgeInsets.all(6.0),
-    decoration: BoxDecoration(
-    borderRadius: BorderRadius.circular(8.0),
-    image: DecorationImage(
-    image: NetworkImage(""),
-    fit: BoxFit.cover,
-    ),
-    ),
-    ),
-    ],
-    //Slider Container properties
-    options: CarouselOptions(
-    height: 180.0,
-    enlargeCenterPage: true,
-    autoPlay: true,
-    aspectRatio: 16 / 9,
-    autoPlayCurve: Curves.fastOutSlowIn,
-    enableInfiniteScroll: true,
-    autoPlayAnimationDuration: Duration(milliseconds: 800),
-    viewportFraction: 0.8,
-    )
-    ),
-
-    ]
+    return Scaffold(
+        body: Container(
+          padding: EdgeInsets.only(left: 30,top: 20,bottom: 10,right: 20),
+          child: ListView(
+            children: [
+              Column(
+                children: [
+                  SizedBox(
+                    height: 20,
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  widget,
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text("Nandhu Raj",
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold
+                      ),),
+                  ),
+                  Text("Followers 0   Following 0"),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Text("Great code comes from stupid problems!",style: new TextStyle(
+                      fontSize: 15.0,
+                      fontWeight: FontWeight.bold,
+                      foreground: Paint()
+                        ..shader = LinearGradient(
+                          colors: <Color>[
+                            Colors.pinkAccent,
+                            Colors.deepPurple.shade200,
+                            Colors.tealAccent
+                          ],
+                        ).createShader(
+                            Rect.fromLTWH(10.0, 0.0, 200.0, 100.0))
+                  )
+                  )
+                ],
+              )
+            ],
+          ),
+        )
     );
   }
 }
